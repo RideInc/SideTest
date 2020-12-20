@@ -1,7 +1,11 @@
-let i = 0;
-let count = 10;
+const basicLoop = (count) => {
 
-while (i < count) {
-  console.log(i)
-  i++
+  let i = 0;
+  while (i < count) {
+    console.log(i)
+    i++
+  }
+
 }
+
+basicLoop(10)
