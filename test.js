@@ -1,2 +1,7 @@
-console.log('Test brunch from PC')
-console.log('Test brunch from Laptop - 20.12.20')
+let i = 0;
+let count = 10;
+
+while (i < count) {
+  console.log(i)
+  i++
+}
