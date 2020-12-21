@@ -1,12 +1,21 @@
-const basicLoop = (count) => {
+const frame = {
+   recipient : 88.123.44.4,
+   sender    : 410.212.23.23,
+   type      : 'IPv4',
+   data      : [],
+   size      : 0
+ };
 
+const bruteForce = (frame) => {
+  let count = frame.data.length;
   let i = 0;
-  let obj = { key: '01' }
   while (i < count) {
-    console.log(i)
-    i++
-  }
 
-}
+    console.log(frame.data[i]);
 
-basicLoop(10)
+    i++;
+  };
+
+};
+
+bruteForce(frame);
