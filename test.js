@@ -1,5 +1,6 @@
-import CVE
+// скрипт извлекает данные из пришедшего кадра
 
+//структура кадра
 const frame = {
    recipient : 88.123.44.4,
    sender    : 410.212.23.23,
@@ -8,28 +9,22 @@ const frame = {
    size      : 0
  };
 
+// извлекаем данные
 const bruteForce = (frame) => {
   let count = frame.data.length;
   let i = 0;
-  let output = [];
   while (i < count) {
 
-    return frame.data[i]
+    console.log(frame.data[i]);
 
     i++;
   };
 };
 
-const checkForce = (data) => {
-  let i = 0;
-  while (i < data.length) {
+const bitConvert = (frame) => {
 
-    if (data[i] in CVE) continue;
-    else
+  // преобразует кадр в двоичную систему изчисления
 
-    i++
-  };
-};
+}
 
-let force = bruteForce(frame); // извлекаем данные
-checkForce(force); // проверяем данные
+bruteForce(frame);
