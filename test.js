@@ -21,10 +21,7 @@ const bruteForce = (frame) => {
   };
 };
 
-const bitConvert = (frame) => {
-
-  // преобразует кадр в двоичную систему изчисления
-
-}
+// конвертация в 2-оичный код
+const dec2bin = () => frame.toString(2);
 
 bruteForce(frame);
