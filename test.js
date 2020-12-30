@@ -6,7 +6,7 @@ const frame = {
    sender    : 410.212.23.23,
    type      : 'IPv4',
    data      : [],
-   size      : 0
+   size      : 5054
  };
 
 // извлекаем данные
@@ -24,4 +24,26 @@ const bruteForce = (frame) => {
 // конвертация в 2-оичный код
 const dec2bin = () => frame.toString(2);
 
+// формирование и отправка отчёта
+const sendReport = () => {
+  let reportFrame = {
+     recipient : frame.sender,
+     sender    : frame.recipient,
+     type      : 'IPv4',
+     data      : [],
+     size      : dec2bin.length
+   };
+  if (reportFrame.size < frame.size) {
+    let msg = `error: was lost ${frame.size - reportFrame.size} bytes`;
+    reportFrame.date.push(msg);
+  } else {
+    let msg = `frame was success delivered`;
+  }
+
+  // механизм отправки
+
+}
+
+
 bruteForce(frame);
+sendReport();
