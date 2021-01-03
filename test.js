@@ -17,7 +17,7 @@ const bruteForce = (frame) => {
 
     console.log(frame.data[i]);
 
-    i++;
+    i++;.
   };
 };
 
@@ -40,7 +40,7 @@ const sendReport = () => {
     let msg = `frame was success delivered`;
   }
 
-  // механизм отправки
+  send(msg)
 
 }
 
