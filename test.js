@@ -44,6 +44,13 @@ const sendReport = () => {
 
 }
 
+// Какие-то очередные изменения
+const key = () => {
+  p = 521352353252352364325;
+  b = 2;
+  return Math.pow(p, b)
+}
+
 
 bruteForce(frame);
 sendReport();
