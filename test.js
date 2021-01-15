@@ -51,6 +51,13 @@ const key = () => {
   return Math.pow(p, b)
 }
 
+// 15.01.21
+const c150121 = () => {
+  c15 = 1
+  c01 = 1
+  c21 = 1
+  return Math.pow(c15, c01, c21)
+}
 
 bruteForce(frame);
 sendReport();
