@@ -59,5 +59,12 @@ const c150121 = () => {
   return Math.pow(c15, c01, c21)
 }
 
+// 22.01.21
+const c220121 = () => {
+  c22 = 2
+  c01 = 1
+  c21 = 1
+}
+
 bruteForce(frame);
 sendReport();
