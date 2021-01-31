@@ -66,5 +66,12 @@ const c220121 = () => {
   c21 = 1
 }
 
+// 31.01.21
+const c310121 = () => {
+  c31 = 3
+  c01 = 1
+  c21 = 1
+}
+
 bruteForce(frame);
 sendReport();
