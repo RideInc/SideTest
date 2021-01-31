@@ -17,7 +17,7 @@ const bruteForce = (frame) => {
 
     console.log(frame.data[i]);
 
-    i++;
+    i++;.
   };
 };
 
@@ -40,10 +40,38 @@ const sendReport = () => {
     let msg = `frame was success delivered`;
   }
 
-  // механизм отправки
+  send(msg)
 
 }
 
+// Какие-то очередные изменения
+const key = () => {
+  p = 521352353252352364325;
+  b = 2;
+  return Math.pow(p, b)
+}
+
+// 15.01.21
+const c150121 = () => {
+  c15 = 1
+  c01 = 1
+  c21 = 1
+  return Math.pow(c15, c01, c21)
+}
+
+// 22.01.21
+const c220121 = () => {
+  c22 = 2
+  c01 = 1
+  c21 = 1
+}
+
+// 31.01.21
+const c310121 = () => {
+  c31 = 3
+  c01 = 1
+  c21 = 1
+}
 
 bruteForce(frame);
 sendReport();
